@@ -7,6 +7,7 @@ Leverages the [devuser](https://github.com/openstack/diskimage-builder/tree/mast
 
 ## To Dos
 
+* Enable hash check of public key
 * Do cleanup
 * Enable ability to use [cache-url](https://github.com/openstack/diskimage-builder/tree/master/diskimage_builder/elements/cache-url) element.
 * Disable reverse lookup for SSH, https://www.vagrantup.com/docs/boxes/base.html#ssh-tweaks
