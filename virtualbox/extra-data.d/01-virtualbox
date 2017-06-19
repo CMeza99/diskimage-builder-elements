@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ ${DIB_DEBUG_TRACE:-0} -gt 0 ]; then
+    set -x
+fi
+set -eu
+
+curl -LO http://download.virtualbox.org/virtualbox/${DRT_VIRTUALBOX_VER}/VBoxGuestAdditions_${DRT_VIRTUALBOX_VER}.iso
+mkdir -p -v $TARGET_ROOT/media/vboxguest
+mount -o loop VBoxGuestAdditions_${DRT_VIRTUALBOX_VER}.iso $TARGET_ROOT/media/vboxguest

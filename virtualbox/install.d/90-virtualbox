@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# There has to be a better way.
+apt-get install -y linux-headers-$(dpkg -l | grep linux-image | head -1 | awk '{print $2}' | sed 's/linux-image-//')
